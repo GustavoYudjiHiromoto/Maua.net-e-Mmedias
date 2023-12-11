@@ -1,0 +1,96 @@
+body{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif, sans-serif;
+    font-size: medium;
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: #E6E6E6;
+}
+
+/* inicio de header */
+header.top{
+    display: block;
+    padding: 5px;
+    border: solid #004684 1px;
+    background-color:#004684;
+}
+header.top > img#logo{
+    display: inline;
+    width: 172px;
+    height: 80px;
+    padding: 1px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+/* fim de header */
+
+/* inicio logo mmedias */
+
+#logo-mmedias{
+    width: 160px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/* fim do logo mmedias */
+
+/* inicio titulo da pagina de materias */
+.title-page{
+    text-align: center;
+}
+
+/* fim titulo da pagina de materias */
+
+/* inicio do Body */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pesos{
+    size: 150%;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px
+}
+
+@media (max-width: 576px) {
+    .btn {
+        display: block;
+    }
+}
+
+/* fim do Body */
+
+
+
+@media(max-width: 280px){
+    body{
+        font-size:smaller;
+        word-break: break-all;
+    }
+    
+    header.top > img#logo{
+        width: 60%;
+        height: 60%;   
+    }
+    div#dadosPessoais > div > div > p#RA, #dadosPessoais > div > div > p#GTL, #dadosPessoais > div > div > p#nome, #dadosPessoais > div > div > p#email, #dadosPessoais > div > div > p#celular, .dados{
+        word-break: break-all; 
+    }
+
+}

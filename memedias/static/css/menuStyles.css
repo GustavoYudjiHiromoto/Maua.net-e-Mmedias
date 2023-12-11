@@ -1,0 +1,208 @@
+body{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif, sans-serif;
+    font-size: medium;
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: #E6E6E6;
+}
+
+/* inicio de header */
+header.top{
+    display: block;
+    padding: 5px;
+    border: solid #004684 1px;
+    background-color:#004684;
+}
+header.top > img#logo{
+    display: inline;
+    width: 172px;
+    height: 80px;
+    padding: 1px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+/* fim de header */
+
+/* inicio logo mmedias */
+
+#logo-mmedias{
+    width: 160px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/* fim logo mmedias */
+
+/* inicio de article */
+h1#mauanet{
+    display: block;
+    color: #004684;
+    font-size: xx-large;
+    margin-top: 15px;
+    margin-bottom:10px;
+    font-weight: bold;
+    text-align:center;
+}
+
+div#dadosPessoais > div{
+    display: table;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom:10px;
+    
+    
+    
+}
+
+div#dadosPessoais > div > div{
+    display: table-row;
+    text-align:left;
+    margin:5px;
+    text-align: center;
+    margin-top:0px;
+    font-weight: bold;
+    font-size:medium;
+    
+    
+    
+}
+
+div#dadosPessoais > div > div > p{
+    display:table-cell;
+    font-size:medium;
+    font-weight:lighter;
+    padding: 10px;
+    text-align:left;   
+}
+div#dadosPessoais > div > div > p.dados{
+    font-weight:bold;
+    text-align:center;
+}
+
+#menu > a, a#alterarInfo, a#logout{
+    display:inline-block;
+    font-size:medium;
+    text-align:center;
+    background-color:#004684;
+    padding:10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin:5px;
+    width:160px;
+    
+    
+}
+a#alterarInfo{
+    background-color: rgb(80, 80, 80);
+}
+
+a#logout{
+    background-color: #84000b;
+}
+
+#menu > a:hover, a#alterarInfo:hover, a#logout:hover{
+    /* background: #0d93f9; */
+    filter: brightness(170%);
+	color: #E6E6E6;
+	/* border: 1px solid #004684; */
+	box-shadow: 1px 1px 1px black;
+	text-shadow: none;
+}
+
+h2{
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: xx-large;
+    color: #004684;
+    margin-bottom: 15px;
+}
+
+#menu{
+    
+    text-align: center;
+    margin-bottom:50px;
+
+   
+   
+}
+
+div#titulo-materias {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+div#titulo-materias > div.col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+/* fim de article */
+
+/* inicio do botão da materia */
+.custom-button{
+    margin: 40px;
+    width: 300px;
+    height: 70px;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.custom-button:hover{
+    border: 3px solid black;
+    background-color: darkgray;
+    color: white;
+}
+
+@media (max-width: 576px){
+    .custom-button{
+        width: 100%;
+    }
+    div#titulo-materias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div#titulo-materias > div.col-md-4 {
+        margin-bottom: 10px;
+    }
+}
+
+/* fim do botão da materia */
+
+
+
+@media(max-width: 280px){
+    body{
+        font-size:smaller;
+        word-break: break-all;
+    }
+    
+    header.top > img#logo{
+        width: 60%;
+        height: 60%;   
+    }
+    div#dadosPessoais > div > div > p#RA, #dadosPessoais > div > div > p#GTL, #dadosPessoais > div > div > p#nome, #dadosPessoais > div > div > p#email, #dadosPessoais > div > div > p#celular, .dados{
+        word-break: break-all; 
+    }
+
+}
